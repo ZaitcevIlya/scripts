@@ -1,0 +1,55 @@
+@import "../../bower_components/normalize.css/normalize.css";
+
+/* KODE */
+
+@import "partials/font-awesome.css";
+@import "partials/bootstrap.css";
+@import "partials/style.css";
+@import "partials/responsive.css";
+
+/* Shortcuts Css Codes */
+@import url('partials/shortcuts.css');
+
+/* ================================================
+Plugin Css
+================================================ */
+/* Awesome Bootstrap Checkbox */
+@import "partials/plugin/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css";
+
+/* Bootstrap Select */
+@import "partials/plugin/bootstrap-select/bootstrap-select.css";
+
+/* Bootstrap Select */
+@import "partials/plugin/bootstrap-toggle/bootstrap-toggle.min.css";
+
+/* Bootstrap wysihtml5 */
+@import "partials/plugin/bootstrap-wysihtml5/bootstrap-wysihtml5.css";
+
+/* Summernote */
+@import "partials/plugin/summernote/summernote.css";
+@import "partials/plugin/summernote/summernote-bs3.css";
+
+/* Sweet Alert */
+@import "partials/plugin/sweet-alert/sweet-alert.css";
+
+/* Data Tables */
+@import "partials/plugin/datatables/datatables.css";
+
+/* Chartist */
+@import "partials/plugin/chartist/chartist.min.css";
+
+/* Rickshaw */
+@import "partials/plugin/rickshaw/rickshaw.css";
+@import "partials/plugin/rickshaw/detail.css";
+@import "partials/plugin/rickshaw/graph.css";
+@import "partials/plugin/rickshaw/legend.css";
+
+/* Date Range Picker */
+@import "partials/plugin/date-range-picker/daterangepicker-bs3.css";
+
+/* Full Calendar */
+@import "partials/plugin/fullcalendar/fullcalendar.css";
+
+@import "partials/custom.scss";
+
+

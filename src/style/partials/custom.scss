@@ -1,0 +1,275 @@
+/* part from old custom.css */
+.sidepanel-members-block {
+    overflow-x: hidden;
+}
+.sidepanel-members {
+    padding: 26px 0;
+}
+#lead-search-container {
+
+}
+
+.ajax-modal {
+    position: fixed;
+    display: none;
+    top: 10%;
+    left: -40%;
+    background: white;
+    z-index: 999;
+    width: 80%;
+    height: 80%;
+    margin-left: 50%;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,1);
+}
+.lamp-indicator {
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    background: transparent linear-gradient(to bottom, greenyellow, green) repeat scroll 0% 0%;
+    box-shadow: 0 0 6px 2px lightgreen;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+.lamp-indicator.disable {
+    background: transparent linear-gradient(to bottom, rgba(245,245,245, 0.7), rgba(179,179,179, 0.7)) repeat scroll 0% 0%;
+    box-shadow: none;
+}
+
+.toggle.btn {
+    min-width: 90px!important;
+    max-height: 34px;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+.toggle-off.btn {
+    padding-left: 36px;
+}
+.toggle-on.btn {
+    padding-right: 36px;
+}
+
+.toggle.btn .toggle-handle {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 32px;
+    margin-left: -34px;
+    margin-right: 0;
+}
+
+.toggle.btn.off .toggle-handle {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 32px;
+    margin-right: -34px;
+    margin-left: 0;
+}
+
+.navigation-row {
+    background-color: #FFFFFF;
+    margin-top: 70px;
+    padding: 15px 0;
+}
+.navigation-row .nav-pills {
+    padding: 0;
+}
+
+.btn {
+    border-radius: 0px!important;
+}
+
+/* end of part of custom.css */
+
+/* animation */
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(-1276px, 0, 0);
+        transform: translate3d(-1276px, 0, 0);
+        visibility: visible
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft
+}
+
+@keyframes slideInRight {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible
+    }
+    100% {
+        -webkit-transform: translate3d(-1276px, 0, 0);
+        transform: translate3d(-1276px, 0, 0);
+    }
+}
+
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+
+    .table {
+        td {
+            position: relative;
+        }
+    }
+    input {
+        border-radius: 0!important;
+    }
+    .error-wrapper {
+        position: relative;
+        .error-message {
+            position: absolute;
+            opacity: 1;
+            top: -20px;
+            left: 0px;
+            color: red;
+            transition: 2s;
+        }
+        .error-indicator {
+            transition: 0.6s;
+            box-shadow: 0 0 2px 2px red inset;
+        }
+    }
+
+}
+
+.main-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .btn {
+        margin-top: -4px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .script-scroll {
+        position: absolute;
+        height: 800px;
+        width: 100%;
+        overflow-y: auto;
+
+        .panel-wrapper {
+            padding-right: 0;
+            .panel {
+                margin-bottom: 0;
+                .table {
+                    .active {
+                        color: #26a65b;
+                    }
+                    .innactive {
+                        color: #ef4836;
+                    }
+                }
+            }
+
+        }
+
+        .description-field,
+        .voice-talent-field {
+            &:hover {
+                .js_edit_field {
+                    opacity: 1;
+                }
+            }
+        }
+        .js_edit_field {
+            position: absolute;
+            top: 2px;
+            right: 6px;
+            opacity: 0;
+            transition: opacity 1s;
+            color: #444;
+            &:hover {
+                color: #444;
+                cursor: pointer;
+            }
+        }
+    }
+    .sidepanel-script-groups {
+        position: absolute;
+        overflow-y: auto;
+        width: 1276px;
+        height: 820px;
+        top: 0;
+        right: -1276px;
+        background: #fff;
+        margin-top: 0;
+        padding-top: 20px;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        box-shadow: -7px 0px 10px -6px black;
+        transition: rigth 2s;
+
+        &.sidepanel-script-groups-opened {
+            right: 0;
+            transition: rigth 2s;
+        }
+
+        .panel {
+            border: none;
+        }
+
+        table {
+            tbody {
+                td {
+                    line-height: 2.5;
+                }
+            }
+            select {
+                height: 30px;
+            }
+        }
+        a.js_create_new_script_group {
+            &:active, &:hover, &:visited, &:focus {
+                color: #26a65b;
+                opacity: 0.9;
+            }
+        }
+    }
+
+}
+.manage-voice-modal {
+
+    input {
+        border-radius: 0;
+    }
+    .error-wrapper {
+        .error-message {
+            left: 15px;
+        }
+    }
+}

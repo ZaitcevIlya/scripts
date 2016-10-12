@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6ddc899f-1af4-4341-99fc-99c0ff7d3093" name="devdebug" url="http://devdebug.noc.solutions">
+        <fileTransfer host="devdebug.noc.solutions" port="9292" privateKey="$USER_HOME$/.ssh/id_rsa" rootFolder="/home/ilyaZaitsev/www" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="9292" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
