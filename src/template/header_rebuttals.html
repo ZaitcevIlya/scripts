@@ -1,0 +1,81 @@
+<section class="header">
+    <nav class="navbar navbar-fixed-top ">
+        <div class="container-fluid bg-primary ">
+            <div class="navbar-header margin-t-10 margin-b-25 ">
+                <p class="navbar-text f-size-20 margin-b-0 margin-l-0 margin-r-0 color4">Script rebuttals</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row navigation-row">
+        <div class="col-md-12">
+            <div class="pull-left margin-0">
+                <button class="btn btn-light color1 pull-right js_add_rebuttals_btn_row">
+                    Add button
+                </button>
+                <button class="btn btn-light color1 pull-right margin-r-15" data-toggle="collapse"
+                        data-target=".edit_btn_categories_panel" aria-expanded="false"
+                        aria-controls="edit_btn_categories_panel">
+                    Add / Change category
+                </button>
+                <a href="/" class="btn btn-light color1 pull-right margin-r-15">
+                    <i class="fa fa-arrow-left"></i> Back
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-12 collapse edit_btn_categories_panel">
+            <div class="row">
+                <hr>
+                <div class="col-md-7">
+                    <p class="panel-title">Script buttons</p>
+                    <div class="row">
+                        <div class="col-md-12 table-categories-wrapper">
+                            <table class="table table-hover table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <td>Button category</td>
+                                    <td>Max. # of clicks</td>
+                                    <td>Desired action</td>
+                                    <td>Trigger button</td>
+                                    <td>Delete</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="btn_category">
+                                        <input type="text" class="from-control col-md-12">
+                                    </td>
+                                    <td class="clicks_count">
+                                        <input type="text" class="from-control col-md-12">
+                                    </td>
+                                    <td class="desired_action">
+                                        <select name="desired_action" id="desired_action" class="form-control">
+                                            <option value="trigger_button_hangup_call">Trigger button hangup call
+                                            </option>
+                                            <option value="trigger_button">Trigger button</option>
+                                        </select>
+                                    </td>
+                                    <td class="trigger_btn">
+                                        <select name="trigger_btn" id="trigger_btn" class="form-control">
+
+                                        </select>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="js_delete_row"><i class="fa fa-trash color10 fa-lg"></i></a>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>

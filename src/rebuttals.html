@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="">
+<div class="container-fluid ">
+    //= template/header_rebuttals.html
+
+    <section class="main-content">
+        <div class="row margin-t-20 script-scroll">
+            <div class="col-md-12 clearfix panel-wrapper">
+                <div class="panel panel-default btn-square">
+                    <div class="panel-title">
+                        Buttons
+                    </div>
+
+                    <div class="panel-body table-responsive">
+                        <table class="table table-hover table-striped table-bordered">
+                            <thead>
+                            <tr>
+                                <td>Button text</td>
+                                <td>Button category</td>
+                                <td>Button color</td>
+                                <td>Outbound/Inbound</td>
+                                <td>Hotkey</td>
+                                <td>Filename</td>
+                                <td>Autoplay</td>
+                                <td>Disposition</td>
+                                <td>Delete</td>
+                            </tr>
+                            </thead>
+                            <tbody class="rebuttals_container">
+                                <tr class="rebuttals_row">
+                                    <td class="rebbutal_btn_text">
+                                        <input type="text" class="from-control">
+                                    </td>
+                                    <td class="rebbutal_btn_category">
+                                        <select name="rebbutal_btn_category" id="rebbutal_btn_category" class="form-control">
+                                            <option value=""></option>
+                                        </select>
+                                    </td>
+                                    <td class="rebbutal_btn_color">
+                                        <select name="rebbutal_btn_color" id="rebbutal_btn_color" class="form-control selectpicker" data-container="body">
+                                            <option class="opt-color-black" value="black">Black</option>
+                                            <option class="opt-color-brown" value="brown">Brown</option>
+                                            <option class="opt-color-cadetBlue" value="cadetBlue">Cadet Blue</option>
+                                            <option class="opt-color-darkblue" value="darkblue">Dark blue</option>
+                                            <option class="opt-color-darkOrange" value="darkOrange" selected="selected">Dark Orange</option>
+                                            <option class="opt-color-darkgreen" value="darkgreen">Dark Green</option>
+                                            <option class="opt-color-green" value="green">Green</option>
+                                            <option class="opt-color-greenYellow" value="greenYellow">Green Yellow</option>
+                                            <option class="opt-color-khaki" value="khaki">Khaki</option>
+                                            <option class="opt-color-lavender" value="lavender">Lavender</option>
+                                            <option class="opt-color-lightblue" value="lightblue">Lightblue</option>
+                                            <option class="opt-color-lightSeaGreen" value="lightSeaGreen">LightSeaGreen</option>
+                                            <option class="opt-color-lightskyblue" value="lightskyblue">Lightskyblue</option>
+                                            <option class="opt-color-maroon" value="maroon">Maroon</option>
+                                            <option class="opt-color-orange" value="orange">Orange</option>
+                                            <option class="opt-color-pink" value="pink">Pink</option>
+                                            <option class="opt-color-purple" value="purple">Purple</option>
+                                            <option class="opt-color-red" value="red">Red</option>
+                                            <option class="opt-color-salmon" value="salmon">Salmon</option>
+                                            <option class="opt-color-yellow" value="yellow">Yellow</option>
+                                        </select>
+                                    </td>
+                                    <td class="rebbutal_boundary">
+                                        <select name="rebbutal_boundary" id="rebbutal_boundary" class="form-control">
+                                            <option value="both">Both</option>
+                                            <option value="inbound">Inbound only</option>
+                                            <option value="outbound">Outbound only</option>
+                                        </select>
+                                    </td>
+                                    <td class="rebuttal_hotkey">
+                                        <input type="text" class="from-control col-md-12">
+                                    </td>
+                                    <td class="rebuttal_filename">
+                                        <input type="text" class="from-control">
+                                    </td>
+                                    <td class="rebbutal_autoplay">
+                                        <input type="checkbox" class="from-control">
+                                    </td>
+                                    <td class="rebbutal_disposition">
+                                        <select name="rebbutal_disposition" id="rebbutal_disposition" class="form-control">
+                                            <option value=""></option>
+                                            <option value="a">A</option>
+                                            <option value="b">B</option>
+                                            <option value="callback">CALLBK</option>
+                                            <option value="dc">DC</option>
+                                            <option value="dead">DEAD</option>
+                                            <option value="dec">DEC</option>
+                                            <option value="dnc">DNC</option>
+                                            <option value="n">N</option>
+                                            <option value="ni">NI</option>
+                                            <option value="np">NP</option>
+                                            <option value="ring" selected="">RING</option>
+                                            <option value="sale">SALE</option>
+                                            <option value="xfer">XFER</option>
+                                        </select>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="#" class="js_delete_row"><i class="fa fa-trash color10 fa-lg"></i></a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

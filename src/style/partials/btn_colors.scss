@@ -1,0 +1,98 @@
+/* variables with colors */
+
+$btn-color-black: #000!important;
+$btn-color-brown: #963!important;
+$btn-color-brown: #963!important;
+$btn-color-cadetBlue: #369!important;
+$btn-color-darkblue: #2c539e!important;
+$btn-color-darkOrange: #f60!important;
+$btn-color-darkgreen: #009907!important;
+$btn-color-green: #c3db64!important;
+$btn-color-greenYellow: #cf3!important;
+$btn-color-khaki: #dbb84d!important;
+$btn-color-lavender: #f5e0ff!important;
+$btn-color-lightblue: lightblue!important;
+$btn-color-lightSeaGreen: #007a7a!important;
+$btn-color-lightskyblue: #a1dbff!important;
+$btn-color-maroon: #c00!important;
+//$btn-color-orange: #!important;
+$btn-color-pink: #ffafd7!important;
+$btn-color-purple: #ba8dd3!important;
+$btn-color-red: #ff5542!important;
+$btn-color-salmon: #ffe6ff!important;
+$btn-color-yellow: #f1da36!important;
+
+
+.rebbutal_btn_color {
+  button.selectpicker {
+    margin-top: 1px;
+  }
+  select {
+
+    option{
+      text-align: center;
+      &:hover{
+        background-color: #fff!important;
+        opacity: .8;
+      }
+
+    }
+    .opt-color-black {
+      background-color: $btn-color-black;
+    }
+    .opt-color-brown {
+      background-color: $btn-color-brown;
+    }
+    .opt-color-cadetBlue {
+      background-color: $btn-color-cadetBlue;
+    }
+    .opt-color-darkblue {
+      background-color: $btn-color-darkblue;
+    }
+    .opt-color-darkOrange {
+      background-color: $btn-color-darkOrange;
+    }
+    .opt-color-darkgreen {
+      background-color: $btn-color-darkgreen;
+    }
+    .opt-color-green {
+      background-color: $btn-color-green;
+    }
+    .opt-color-greenYellow {
+      background-color: $btn-color-greenYellow;
+    }
+    .opt-color-khaki {
+      background-color: $btn-color-khaki;
+    }
+    .opt-color-lavender {
+      background-color: $btn-color-lavender;
+    }
+    .opt-color-lightblue {
+      background-color: $btn-color-lightblue;
+    }
+    .opt-color-lightSeaGreen {
+      background-color: $btn-color-lightSeaGreen;
+    }
+    .opt-color-lightskyblue {
+      background-color: $btn-color-lightskyblue;
+    }
+    .opt-color-maroon {
+      background-color: $btn-color-maroon;
+    }
+    .opt-color-pink {
+      background-color: $btn-color-pink;
+    }
+    .opt-color-purple {
+      background-color: $btn-color-purple;
+    }
+    .opt-color-red {
+      background-color: $btn-color-red;
+    }
+    .opt-color-salmon {
+      background-color: $btn-color-salmon;
+    }
+    .opt-color-yellow {
+      background-color: $btn-color-yellow;
+    }
+  }
+}

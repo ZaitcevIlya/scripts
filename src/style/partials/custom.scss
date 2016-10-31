@@ -187,36 +187,15 @@ body {
             .panel {
                 margin-bottom: 0;
                 .table {
-                    .active {
+                    .status_active {
                         color: #26a65b;
                     }
-                    .innactive {
+                    .status_innactive {
                         color: #ef4836;
                     }
                 }
             }
 
-        }
-
-        .description-field,
-        .voice-talent-field {
-            &:hover {
-                .js_edit_field {
-                    opacity: 1;
-                }
-            }
-        }
-        .js_edit_field {
-            position: absolute;
-            top: 2px;
-            right: 6px;
-            opacity: 0;
-            transition: opacity 1s;
-            color: #444;
-            &:hover {
-                color: #444;
-                cursor: pointer;
-            }
         }
     }
     .sidepanel-script-groups {
@@ -270,6 +249,58 @@ body {
     .error-wrapper {
         .error-message {
             left: 15px;
+        }
+    }
+}
+
+.rebuttal_hotkey {
+    width: 5%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.rebbutal_btn_category {
+    width: 9%;
+}
+.rebbutal_survey_field {
+    width: 7%;
+}
+
+.edit_btn_categories_panel {
+    max-height: 400px;
+    overflow: hidden;
+    .table-categories-wrapper {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+}
+
+.table {
+    .script-name-column,
+    .delete-column,
+    .camp-id-column,
+    .rebuttals-numbers-column,
+    .open-location-column {
+        max-width: 7%;
+        width: 7%;
+    }
+    .description-field-column {
+
+    }
+    .voice-talent-column {
+        max-width: 10%;
+        width: 10%;
+    }
+    .input-without-style {
+        width: 100%;
+        border: 0;
+        box-sizing: border-box;
+        box-shadow: none;
+
+        &:hover, &:focus {
+            box-shadow: 0 0 1px 1px #777 inset;
+            //border: 1px solid #777;
+            box-sizing: border-box;
         }
     }
 }
